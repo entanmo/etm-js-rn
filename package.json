@@ -1,0 +1,44 @@
+{
+  "name": "etm-js-rn",
+  "version": "1.0.0",
+  "description": "entanmo javascript library for reactnative",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodeify": "rn-nodeify --install stream,buffer,events --hack"
+  },
+  "author": "alpha.entamo",
+  "license": "ISC",
+  "dependencies": {
+    "JSONStream": "^1.3.1",
+    "browserify-bignum": "^1.3.0-2",
+    "buffer": "^4.7.0",
+    "bytebuffer": "^5.0.1",
+    "events": "^1.0.0",
+    "fast-sha256": "^1.0.0",
+    "readable-stream": "^1.0.33",
+    "ripemd160": "^2.0.1",
+    "stream-browserify": "^1.0.0",
+    "through2": "^2.0.3",
+    "tweetnacl": "^1.0.0"
+  },
+  "devDependencies": {
+    "rn-nodeify": "^10.0.0"
+  },
+  "react-native": {
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify"
+  },
+  "browser": {
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify"
+  }
+}
